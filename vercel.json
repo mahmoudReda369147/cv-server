@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "src/server.js", "use": "@vercel/node" }
-  ],
+  "functions": {
+    "src/server.js": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
   "routes": [
     { "src": "/(.*)", "dest": "src/server.js" }
-  ]
+  ],
+  "buildCommand": "npm run build"
 }
