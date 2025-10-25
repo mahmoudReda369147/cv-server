@@ -3,7 +3,8 @@
   "version": 2,
   "functions": {
     "src/server.js": {
-      "runtime": "vercel-node@20.0.0",
+      "runtime": "vercel-node@18.0.0"
+,
       "maxDuration": 60,
       "memory": 1024
     }
