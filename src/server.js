@@ -31,8 +31,8 @@ app.use('/api/chat', chatRoutes);
 
 // Start server
 const PORT = config.PORT;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+ // console.log(`Server running on port ${PORT}`);
+//});
 
 module.exports = app;
