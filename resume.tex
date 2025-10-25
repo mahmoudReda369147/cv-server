@@ -1,0 +1,85 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[arabic,english]{babel} % Add arabic for potential future use or context, default to english for resume content
+\usepackage{geometry}
+\geometry{left=0.75in, right=0.75in, top=0.75in, bottom=0.75in}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=2pt, partopsep=0pt, leftmargin=1em}
+\usepackage{titlesec}
+	itlespacing*{\section}{0pt}{8pt}{4pt} % Adjust spacing for sections
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    menucolor=black,
+    anchorcolor=black
+}
+\usepackage{ragged2e} % For \Justifying
+\usepackage{xurl} % For better URL line breaks
+
+\pagestyle{empty} % No page numbers
+
+% Define a new command for section titles
+
+ewcommand{\resSection}[1]{\section*{\MakeUppercase{#1}}\vspace{-0.1cm}\hrule\vspace{0.1cm}}
+
+\begin{document}
+\Justifying % Justify text for a clean look
+
+% --- Header ---
+\begin{center}
+    	extbf{\Large John Doe} \\
+    \href{mailto:john.doe@example.com}{\color{black}john.doe@example.com} 	extbullet \ (123) 456-7890 	extbullet \ \href{https://www.linkedin.com/in/johndoe}{\color{blue}linkedin.com/in/johndoe} 	extbullet \ San Francisco, CA
+\end{center}
+\vspace{-0.2cm} % Adjust space after header
+
+% --- Professional Summary ---
+\resSection{Professional Summary}
+A highly motivated and results-oriented professional with 	extbf{7+ years of experience} in software development, specializing in building scalable and robust applications. Proven ability to lead complex projects, optimize system performance, and mentor junior engineers. Seeking a challenging Senior Software Engineer role to leverage expertise in full-stack development and contribute to innovative product solutions.
+
+% --- Work Experience ---
+\resSection{Work Experience}
+
+	extbf{Senior Software Engineer} \hfill 	extbf{Jan 2020 – Present} \\
+	extit{Tech Solutions Inc.} \hfill 	extit{San Francisco, CA}
+\begin{itemize}
+    \item Developed and maintained high-performance backend services using Python and Django, handling millions of requests daily.
+    \item Collaborated with product management and design teams to translate business requirements into technical specifications and deliver new features.
+    \item Optimized critical database queries and API endpoints, resulting in a 	extbf{20\% reduction} in average response times.
+    \item Led code reviews, ensuring code quality, maintainability, and adherence to best practices for a team of 5 developers.
+    \item Mentored junior engineers, fostering their professional growth and improving team productivity.
+\end{itemize}
+
+\vspace{0.1cm}
+
+	extbf{Software Developer} \hfill 	extbf{Jun 2017 – Dec 2019} \\
+	extit{Innovate Corp.} \hfill 	extit{New York, NY}
+\begin{itemize}
+    \item Built responsive and intuitive user interfaces using React.js and Redux, enhancing user experience for enterprise applications.
+    \item Participated actively in Agile/Scrum development cycles, contributing to daily stand-ups, sprint planning, and retrospectives.
+    \item Developed and consumed RESTful APIs to integrate frontend components with backend services.
+    \item Wrote comprehensive unit and integration tests using Jest and Enzyme, increasing code coverage by 30\%.
+\end{itemize}
+
+% --- Education ---
+\resSection{Education}
+
+	extbf{Master of Science in Computer Science} \hfill 	extbf{May 2017} \\
+	extit{University of California, Berkeley} \hfill 	extit{Berkeley, CA}
+\vspace{0.1cm}
+
+	extbf{Bachelor of Science in Computer Engineering} \hfill 	extbf{May 2015} \\
+	extit{State University} \hfill 	extit{Anytown, USA}
+
+% --- Skills ---
+\resSection{Skills}
+	extbf{Programming Languages:} Python, Java, JavaScript, C++, Go, Ruby \\
+	extbf{Web Technologies:} React.js, Node.js, Django, Flask, RESTful APIs, HTML5, CSS3 \\
+	extbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis \\
+	extbf{Tools \& Platforms:} Docker, Kubernetes, AWS (EC2, S3, RDS), Git, Jira, Jenkins \\
+	extbf{Methodologies:} Agile, Scrum, Test-Driven Development (TDD), CI/CD
+
+\end{document}
