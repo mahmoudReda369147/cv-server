@@ -4,13 +4,6 @@
     { "src": "src/server.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "src/server.js" },
     { "src": "/(.*)", "dest": "src/server.js" }
-  ],
-  "functions": {
-    "src/server.js": {
-      "maxDuration": 60,
-      "memory": 1024
-    }
-  }
+  ]
 }
