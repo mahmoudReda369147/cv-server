@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node src/server.js",
     "build": "npx prisma generate",
+    "vercel-build": "npx prisma generate",
     "start": "node src/server.js"
   },
   "engines": {
