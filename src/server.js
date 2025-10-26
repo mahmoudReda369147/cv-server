@@ -30,7 +30,7 @@ app.use('/api/chat', chatRoutes);
 
 
 // Start server
-const PORT = config.PORT;
+const PORT = config.PORT || 3000;
  app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
