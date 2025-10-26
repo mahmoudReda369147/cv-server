@@ -7,6 +7,9 @@
     "build": "npx prisma generate",
     "start": "node src/server.js"
   },
+  "engines":{
+    "node":"22.14.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
